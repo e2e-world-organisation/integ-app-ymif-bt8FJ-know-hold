@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-elyq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/quay-or-not-to-quay/nbe-e2e-efkb-tenant/integ-app-ymif/hacbs-test-project-elyq@sha256:637248ed13b4ac186aedf96ff73e8a64b640fa14b185987c0513a4946abc4868
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
